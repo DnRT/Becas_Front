@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- bootswatch -->
+        <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+        <link rel="stylesheet" href="estilos.css">
+        <title>Becas Online</title>
+        
+    </head>
+    <body>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Formulario postulación a beca talento deportivo y/o artístico</a>
+          </div>
+        </nav>
+      </header>
+      
+      <main>
+        
+        <form class="formulario_beca">
+            <!-- recepcion de archivos -->
+            <div>
+              <h2>Antecedentes del postulante</h2>
+              <label class="text-start">Certificado de notas</label><br>
+              <input type="file" id="cNotas" name="cNotas">
+              <label class="sub">Antes de cargar el documento, renombrar el archivo a Nombre_Apellido_Notas. Ej: Juan_Salinas_Notas</label>
+              <br><br>
+              <label class="text-start">Certificado de alumno regular</label><br>
+              <input type="file" id="CAR" name="CAR">
+              <label class="sub">Antes de cargar el documento, renombrar el archivo a Nombre_Apellido_alumno_regular. Ej: Juan_Salinas_alumno_regular</label>
+              <br><br>
+              <label class="text-start">Documentación inscripción de federación</label><br>
+              <input type="file" id="iFederacion" name="iFederecion">
+              <label class="sub">Antes de cargar el documento, renombrar el archivo a Nombre_Apellido_alumno_regular. Ej: Juan_Salinas_federacion</label>
+              <br><br>
+              <label class="text-start">Documentación de situación económica deficiente</label><br>
+              <input type="file" id="economica" name="economica">
+              <label class="sub">Antes de cargar el documento, renombrar el archivo a Nombre_Apellido_alumno_regular. Ej: Juan_Salinas_economica</label>
+              <br><br>
+              <!-- antecedentes del postulante -->
+              <input type="text" id="nombre" name="nombre" placeholder="Nombres">
+              <input type="text" id="apellido" name="apellido" placeholder="Apellidos">
+              <input type="text" id="direccion" name="direccion" placeholder="Dirección">
+              <input type="text" id="correo" name="correo" placeholder="Correo">
+              <input type="text" id="telefono" name="telefono" placeholder="Teléfono">
+              <p> ¿Posee una cuenta bancaria? </p>
+              <label>Si su respuesta es Si, debe descargar este documento  https://bit.ly/3L01C8O | En caso de que el beneficiario sea menor de edad, debes descargar este documento https://bit.ly/3H8gOyh</label>
+              <label>Si su respuesta es No, deberá solicitar una y continuar con el proceso de postulación</label><br>
+              <input type="radio" id="conCB" name="cuentaBancaria" value="conCB">
+              <label for="conCB">Si</label> <br>
+              <input type="radio" id="sinCB" name="cuentaBancaria" value="sinCB">
+              <label for="sinCB">No</label><br>
+              <label class="text-start">Adjunte cuenta bancaria</label>
+              <input type="file" id="cb" name="cb">
+              <br><br>
+              <p>¿Cuenta usted con alguno de estos  beneficios?</p>
+              <input type="radio" id="gratuidad" name="beneficio" value="gratuidad">
+              <label for="gratuidad">Gratuidad</label><br>
+              <input type="radio" id="rIndigena" name="beneficio" value="rIndigena">
+              <label for="rIndigena">Beca residencia indigena</label><br>
+              <input type="radio" id="sinBeneficio" name="beneficio" value="sinBeneficio">
+              <label for="sinBeneficio">No poseo ninguna</label>
+              <br><br>
+              <label>¿Obtuvo beneficio Beca municipalidad de Cartagena año 2021?</label><br>
+              <input type="radio" id="conBAP" name="becaAP" value="conBAP">
+              <label for="conBAP">Si</label><br>
+              <input type="radio" id="sinBAP" name="becaAP" value="sinBAP">
+              <label for="sinBAP">No</label><br><br>                          
+            </div>
+            <div>
+              <h2>antecedentes academicos del postulante</h2><br>
+              <label>Seleccione el tipo de establecimiento de estudios del alumno</label><br>
+              <input type="radio" id="uTradicional" name="cEstudio" value="uTradicional">
+              <label for="uTradicional">Universidad Tradicional</label> <br>
+              <input type="radio" id="uPrivada" name="cEstudio" value="uPrivada">
+              <label for="uPrivada">Universidad Privada</label> <br>
+              <input type="radio" id="iProfesional" name="cEstudio" value="iProfesional">
+              <label for="iProfesional">Instituto Profesional</label> <br>
+              <input type="radio" id="cfTecnica" name="cEstudio" value="cfTecnica">
+              <label for="cfTecnica">Centro de formacion tecnica</label> <br>
+              <input type="radio" id="eMatriz" name="cEstudio" value="eMatriz">
+              <label for="eMatriz">Escuela matriz FF.AA y O.P.</label> <br>
+              <input type="radio" id="cParticular" name="cEstudio" value="cParticular">
+              <label for="cParticular">Colegio/liceo particular</label> <br>
+              <input type="radio" id="cParticular_sub" name="cEstudio" value="cParticular_sub">
+              <label for="cParticular_sub">Colegio/Liceo particular subvencionado</label> <br>
+              <input type="radio" id="cMunicipal" name="cEstudio" value="cMunicipal">
+              <label for="cMunicipal">Colegio/Liceo municipal</label> <br>
+              <input type="radio" id="iPreescolar" name="cEstudio" value="iPreescolar">
+              <label for="iPreescolar">Institución pre-escolar</label> <br>
+              <input type="radio" id="otraCE" name="cEstudio" value="otraCE">
+              <label for="otraCE">Otra...</label>
+              <input type="text" class="text_radio" id="otra" placeholder="Escriba aquí su institución">
+              <br>
+              <input type="text" id="nombreCE" placeholder="Nombre de la casa de estudio">
+              <input type="text" id="carrera" placeholder="Nombre de la carrera (En caso de corresponder)">
+              <input type="text" id="duracion_carrera" placeholder="Duración de la carrera (En caso de corresponder)">
+              <input type="text" id="semestre_actual" placeholder="Indique el semestre a cursar o que se encuentre cursando">
+              <br>
+              <label>Indique el promedio de notas del anterior semestre o año cursado:</label><br>
+              <input type="radio" id="grupo1" name="notas" value="6.8 - 7.0">
+              <label for="grupo1">6.8 - 7.0</label><br>
+              <input type="radio" id="grupo2" name="notas" value="6.5 - 6.7">
+              <label for="grupo2">6.5 - 6.7</label><br>
+              <input type="radio" id="grupo3" name="notas" value="6.1 - 6.4">
+              <label for="grupo3">6.1 - 6.4</label><br>
+              <input type="radio" id="grupo4" name="notas" value="5.8 - 6.0">
+              <label for="grupo1">5.8 - 6.0</label><br>
+              <input type="radio" id="grupo5" name="notas" value="5.0 - 5.7">
+              <label for="grupo5">5.0 - 5.7</label><br>
+              <input type="radio" id="sin_exigencia" name="notas" value="sin exigencias">
+              <label for="sin_exigencia">Sin exigencia</label><br>
+            </div>
+            <input type="submit" value="Confirmar" class="button"><input type="submit" value="Cancelar" class="button2">
+    </body>
+</html>
