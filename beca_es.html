@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- bootswatch -->
+        <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+        <link rel="stylesheet" href="estilos.css">
+        <title>Becas Online</title>
+        
+    </head>
+    <body>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand">Formulario postulación a beca educación superior</a>
+          </div>
+        </nav>
+      </header>
+      
+      <main>
+        
+        <form class="formulario_beca">
+            <!-- antecedentes del postulante -->
+            <div>
+              <h2>Antecedentes del postulante</h2>
+              <label class="text-start">Certificado de notas</label><br>
+              <input type="file" id="cNotas" name="cNotas">
+              <label class="sub">Antes de cargar el documento, renombrar el archivo a Nombre_Apellido_Notas. Ej: Juan_Salinas_Notas</label>
+              <br><br>
+
+              <label class="text-start">Certificado de alumno regular</label><br>
+              <input type="file" id="CAR" name="CAR">
+              <label class="sub">Antes de cargar el documento, renombrar el archivo a Nombre_Apellido_alumno_regular. Ej: Juan_Salinas_alumno_regular</label>
+              <br><br>
+
+              <label class="text-start">Documentación de situación económica deficiente</label><br>
+              <input type="file" id="economica" name="economica">
+              <label class="sub">Antes de cargar el documento, renombrar el archivo a Nombre_Apellido_alumno_regular. Ej: Juan_Salinas_economica</label>
+              <br><br>
+
+              <input type="text" id="nombre" name="nombre" placeholder="Nombres des postulante">
+              <input type="text" id="apellido" name="apellido" placeholder="Apellidos">
+              <input type="text" id="rut" name="rut" placeholder="RUT (con puntos y con guion. Ej: 11.111.111-1)">
+              <input type="text" id="direccion" name="direccion" placeholder="Dirección">
+              <input type="text" id="correo" name="correo" placeholder="Correo">
+              <input type="text" id="telefono" name="telefono" placeholder="Teléfono">
+
+              <p> ¿Posee una cuenta bancaria? </p>
+              <label>Si su respuesta es Si, debe descargar este documento  https://bit.ly/3L01C8O | En caso de que el beneficiario sea menor de edad, debes descargar este documento https://bit.ly/3H8gOyh</label>
+              <label>Si su respuesta es No, deberá solicitar una y continuar con el proceso de postulación</label><br>
+              <input type="radio" id="conCB" name="cuentaBancaria" value="Tiene cuenta bancaria">
+              <label for="conCB">Si</label> <br>
+              <input type="radio" id="sinCB" name="cuentaBancaria" value="Sin cuenta bancaria">
+              <label for="sinCB">No</label><br>
+              <label class="text-start">Adjunte cuenta bancaria: </label>
+              <input type="file" id="cb" name="cb">
+              <br><br>
+
+              <p>¿Cuenta usted con alguno de estos  beneficios?</p>
+              <input type="radio" id="gratuidad" name="beneficio" value="Gratuidad">
+              <label for="gratuidad">Gratuidad</label><br>
+              <input type="radio" id="rIndigena" name="beneficio" value="Residencia indígena">
+              <label for="rIndigena">Beca residencia indigena</label><br>
+              <input type="radio" id="sinBeneficio" name="beneficio" value="Sin beneficio">
+              <label for="sinBeneficio">No poseo ninguna</label>
+              <br><br>
+
+              <p>¿Obtuvo beneficio Beca municipalidad de Cartagena año 2021?</p>
+              <input type="radio" id="conBAP" name="becaAP" value="Si">
+              <label for="conBAP">Si</label><br>
+              <input type="radio" id="sinBAP" name="becaAP" value="No">
+              <label for="sinBAP">No</label><br><br>                          
+            </div>
+            <!-- antecedentes academicos del postulante -->
+            <div>
+              <h2>antecedentes academicos del postulante</h2><br>
+
+              <p>Seleccione el tipo de establecimiento de estudios del alumno</p>
+              <input type="radio" id="uTradicional" name="cEstudio" value="Universidad tradicional">
+              <label for="uTradicional">Universidad Tradicional</label> <br>
+              <input type="radio" id="uPrivada" name="cEstudio" value="Universidad privada">
+              <label for="uPrivada">Universidad Privada</label> <br>
+              <input type="radio" id="iProfesional" name="cEstudio" value="Instituto profesional">
+              <label for="iProfesional">Instituto Profesional</label> <br>
+              <input type="radio" id="cfTecnica" name="cEstudio" value="Centro de formación tecnica">
+              <label for="cfTecnica">Centro de formación tecnica</label> <br>
+              <input type="radio" id="eMatriz" name="cEstudio" value="Escuela matriz FF.AA">
+              <label for="eMatriz">Escuela matriz FF.AA y O.P.</label> <br>
+              <input type="radio" id="otraCE" name="cEstudio" value="otraCE">
+              <label for="otraCE">Otra...</label>
+              <input type="text" class="text_radio" id="otra" placeholder="Escriba aquí su institución">
+              <br>
+
+              <input type="text" id="nombreCE" placeholder="Nombre de la casa de estudio">
+              <input type="text" id="carrera" placeholder="Nombre de la carrera (En caso de corresponder)">
+              <input type="text" id="duracion_carrera" placeholder="Duración de la carrera (En caso de corresponder)">
+              <input type="text" id="semestre_actual" placeholder="Indique el semestre a cursar o que se encuentre cursando">
+              <br><br>
+
+              <p>Indique el promedio de notas del anterior semestre o año cursado:</p>
+              <input type="radio" id="grupo1" name="notas" value="6.8 - 7.0">
+              <label for="grupo1">6.8 - 7.0</label><br>
+              <input type="radio" id="grupo2" name="notas" value="6.5 - 6.7">
+              <label for="grupo2">6.5 - 6.7</label><br>
+              <input type="radio" id="grupo3" name="notas" value="6.1 - 6.4">
+              <label for="grupo3">6.1 - 6.4</label><br>
+              <input type="radio" id="grupo4" name="notas" value="5.8 - 6.0">
+              <label for="grupo1">5.8 - 6.0</label><br>
+              <input type="radio" id="grupo5" name="notas" value="5.0 - 5.7">
+              <label for="grupo5">5.0 - 5.7</label><br>
+              <input type="radio" id="sin_exigencia" name="notas" value="sin exigencias">
+              <label for="sin_exigencia">Sin exigencia</label><br>
+            </div>
+            <!-- antecedentes economicos del postulante -->
+            <div>
+              <h2>Antecedentes Económicos</h2><br>
+
+              <p>Actividad laboral jefe de hogar:</p>
+              <input type="radio" id="cesante" name="actividadJH" value="Cesante">
+              <label for="cesante">Cesante (Inactivo)</label><br>
+              <input type="radio" id="pensionado" name="actividadJH" value="Pensionado">
+              <label for="pensionado">Pensionado (Pension de alimentos, aportes de terceros)</label><br>
+              <input type="radio" id="trabajadorCP" name="actividadJH" value="Trabajador por cuenta propia">
+              <label for="trabajadorCP">Trabajador por cuenta propia (Comerciante, maestro, ascesora de hogar)</label><br>
+              <input type="radio" id="trabajadorI" name="actividadJH" value="Trabajador independiente">
+              <label for="trabajadorI">Trabajador independiente (Honorarios)</label><br>
+              <input type="radio" id="trabajadorD" name="actividadJH" value="Trabajador dependiente">
+              <label for="trabajadorD">Trabajador dependiente</label><br>
+              <input type="radio" id="trabajadorSP" name="actividadJH" value="Trabajador sector público">
+              <label for="trabajadorSP">Trabajador sector público (Trabajador gubernamental, educación, salud, municipal)</label><br>
+              <input type="radio" id="microempresario" name="actividadJH" value="Microempresario">
+              <label for="microempresario">Microempresario</label><br>
+              <input type="radio" id="jubilado" name="actividadJH" value="Jubilado">
+              <label for="jubilado">Jubilado (Pensión del estado o AFP)</label><br>
+
+              <p>¿Cúal es la situación actual del jefe de hogar?</p>
+              <input type="radio" id="activoP" name="actividad_jefe" value="Activo Permanente">
+              <label for="activoP">Activo permanente</label><br>
+              <input type="radio" id="activoO" name="actividad_jefe" value="Activo Ocasional">
+              <label for="activoO">Activo Ocasional</label><br>
+              <input type="radio" id="inactivo" name="actividad_jefe" value="Inactivo">
+              <label for="inactivo">Inactivo</label><br>
+
+              <p>Tramo registro social de hogares (Cartola hogar RSH)</p>
+              <input type="radio" id="grupo_menos40" name="tramo" value="40% o menos">
+              <label for="grupo_menos40">40% o menos</label><br>
+              <input type="radio" id="grupo_41_50" name="tramo" value="41% al 50%">
+              <label for="grupo_41_50">41% al 50%</label><br>
+              <input type="radio" id="grupo_51_60" name="tramo" value="51% al 60%">
+              <label for="grupo_51_60">51% al 60%</label><br>
+              <input type="radio" id="sin_conocimiento" name="tramo" value="Sin conocimiento del tramo">
+              <label for="sin_conocimiento">No conozco cual es mi tramo</label><br><br>
+
+              <p>Tramo ingreso per cápita (corresponde al total de los ingresos familiares divididos por la cantidad de personas en el hogar)</p>
+              <input type="radio" id="ingreso1" name="ingresos" value="$102.000">
+              <label for="ingreso1">$102.000</label><br>
+              <input type="radio" id="ingreso2" name="ingresos" value="$103.000 a $200.000">
+              <label for="ingreso2">$103.000 a $200.000</label><br>
+              <input type="radio" id="ingreso3" name="ingresos" value="$201.000 a $306.000">
+              <label for="ingreso3">$201.000 a $306.000</label><br>
+              <input type="radio" id="ingreso4" name="ingresos" value="$307.000 o mas">
+              <label for="ingreso4">$307.000 o más</label><br><br>
+
+            </div>
+            <!-- antecedentes de vivienda y habitabilidad -->
+            <div>
+              <h2>Antecedentes de vivienda y habitabilidad</h2><br>
+
+              <p>Materialidad</p>
+              <input type="radio" id="ligera" name="materialidad" value="Ligera">
+              <label for="ligera">Ligera</label><br>
+              <input type="radio" id="madera" name="materialidad" value="Madera">
+              <label for="madera">Madera</label><br>
+              <input type="radio" id="mixta" name="materialidad" value="Mixta">
+              <label for="misxta">Mixta</label><br>
+              <input type="radio" id="solida" name="materialidad" value="Sólida">
+              <label for="solida">Sólida</label><br>
+
+              <p>Estado</p>
+              <input type="radio" id="buena" name="estado" value="Buena">
+              <label for="buena">Buena</label><br>
+              <input type="radio" id="regular" name="estado" value="Regular">
+              <label for="regular">Regular</label><br>
+              <input type="radio" id="mala" name="estado" value="Mala">
+              <label for="mala">Mala</label><br>
+
+              <p>Tenencia</p>
+              <input type="radio" id="terreno_irregular" name="tenencia" value="Terreno irregular">
+              <label for="terreno_irregular">Terreno irregular</label><br>
+              <input type="radio" id="allegado" name="tenencia" value="Allegado">
+              <label for="allegado">Allegado</label><br>
+              <input type="radio" id="arrendatario" name="tenencia" value="Arrendatario">
+              <label for="arrendatario">Arrendatario</label><br>
+              <input type="radio" id="adquiriente" name="tenencia" value="Adquiriente">
+              <label for="adquiriente">Adquiriente</label><br>
+              <input type="radio" id="usufructuario" name="tenencia" value="Usufructuario">
+              <label for="usufructario">Usufructario</label><br>
+              <input type="radio" id="propietario" name="tenencia" value="=Propietario">
+              <label for="propietario">Propietario</label><br><br>
+
+            </div>
+            <!-- antecedentes de salud -->
+            <div>
+              <h2>Antecedentes de salud</h2><br>
+
+              <p>¿Padece de alguna enfermedad crónica? (diabetes, asma, hipertensión)</p>
+              <input type="radio" id="padeceEC" name="enfermedades_cronicas" value="Si">
+              <label for="padeceEC">Si</label><br>
+              <input type="radio" id="no_padeceEC" name="enfermedades_cronicas" value="No">
+              <label for="no_padeceEC">No</label><br>
+              <label>Si su respuesta anterior es si, Indique su patología, si es no, deje en blanco.</label>
+              <input type="text" class="text_radio" id="nombre_enfermedad" name="nombre_enfermedad" placeholder="Escriba aqui el nombre de su enfermedad..."><br><br>
+
+              <label class="text-start">Certificado de salud</label><br>
+              <input type="file" id="cSalud" name="cSalud">
+              <label class="sub">Antes de cargar el documento, renombrar el archivo a Nombre_Apellido_salud. Ej: Juan_Salinas_salud</label>
+              <br><br>
+
+              <p>¿Padece de alguna enfermedad catastrófica? (Patologías que no pueden ser atendidas en el Centro de salud familiar CESFAM de nuestra comuna)</p>
+              <input type="radio" id="con_enfermedad_catastrofica" name="enfermedades_catastroficas" value="Si">
+              <label for="con_enfermedad_catastrofica">Si</label><br>
+              <input type="radio" id="sin_enfermedad_catastrofica" name="enfermedades_catastroficas" value="No">
+              <label for="sin_enfermedad_catastrofica">No</label><br>
+              <label>Si su respuesta anterior es si, Indique su patología, si es no, deje en blanco.</label>
+              <input type="text" class="text_radio" id="nombre_enfermedad" name="nombre_enfermedad" placeholder="Escriba aqui el nombre de su enfermedad..."><br><br>
+              
+              <p>¿Estas patologías afectan al postulante, Jefe de Hogar o algún miembro de la familia?</p>
+              <input type="radio" id="postulante_padeciente" name="afectados" value="Postulante">
+              <label for="postulante_padeciente">Postulante</label><br>
+              <input type="radio" id="jefeHogar_padeciente" name="afectados" value="Jefe de hogar">
+              <label for="jefeHogar_padeciente">Jefe de hogar</label><br>
+              <input type="radio" id="ambos_padecientes" name="afectados" value="Afecta a ambos">
+              <label for="ambos_padecientes">Afecta a ambos</label><br>
+              <input type="radio" id="ninguno_padeciente" name="afectados" value="Ninguno">
+              <label for="ninguno_padeciente">Ninguno</label><br>
+
+              <p>¿Estas patologías generan gastos permanentes en el grupo familiar?</p>
+              <input type="radio" id="genera_perdidas" name="generacion_perdidas" value="Si">
+              <label for="genera_perdidas">Si</label><br>
+              <input type="radio" id="no_genera_perdidas" name="generacion_perdidas" value="No">
+              <label for="no_genera_perdidas">No</label><br>
+
+            </div>
+            <!-- otros antecedentes de familia -->
+            <div>
+              <h2>Otras situaciones sociales de la Familia </h2><br>
+
+              <p>Situación de discapacidad</p>
+              <input type="radio" id="padece_discapacidad" name="situacion_discapacidad" value="Si">
+              <label for="padece_discapacidad">Si</label><br>
+              <input type="radio" id="no_padece_dicapacidad" name="situacion_discapacidad" value="No">
+              <label for="no_padece_dicapacidad">No</label><br>
+              <label>Si su respuesta anterior es si, debe cargar certificado o fotocopia de credencial de discapacidad. si su respuesta es no, pase a la siguiente consulta.</label>
+              <label class="text-start">Credencial de discapacidad: </label>
+              <input type="file" id="credencial_discapacidad" name="credencial_discapacidad"><br><br>
+
+              <p>Paternidad o Maternidad adolescente en la familia </p>
+              <input type="radio" id="padres_adolecentes" name="paternidad_adolecente" value="Si">
+              <label for="padres_adolecentes">Si</label><br>
+              <input type="radio" id="no_padres_adolecentes" name="paternidad_adolecente" value="No">
+              <label for="no_padres_adolecentes">No</label><br>
+
+              <p>¿El/la alumno/a es padre o madre?</p>
+              <input type="radio" id="alumno_padre" name="paternidad_alumnos" value="Si">
+              <label for="alumno_padre">Si</label><br>
+              <input type="radio" id="alumno_no_padre" name="paternidad_alumnos" value="No">
+              <label for="alumno_no_padre">No</label><br>
+              <label>Si su respuesta anterior es si, debe cargar certificados de nacimientos, de sus hijos, si su respuesta es no, pase a la siguiente consulta (el documento debe contener el nombre del o la postulante)</label>
+              <label class="text-start">Certificado de nacimiento: </label>
+              <input type="file" id="certificado_nacimiento" name="certificado_nacimiento"><br><br>
+
+              <p>Lugar de estudios del postulante</p>
+              <input type="radio" id="estudia_fuera_region" name="lugar_estudios" value="Fuera de la región">
+              <label for="estudia_fuera_region">Fuera de la región</label><br>
+              <input type="radio" id="estudia_fuera_provincia" name="lugar_estudios" value="Fuera de la provincia">
+              <label for="estudia_fuera_provincia">Fuera de la provincia</label><br>
+              <input type="radio" id="estudia_fueracomuna" name="lugar_estudios" value="Fuera de la comuna">
+              <label for="estudia_fueracomuna">Fuera de la comuna</label><br>
+
+              <p>¿El postulante vive en una zona rural?</p>
+              <input type="radio" id="vive_zonaRural" name="zona_rural" value="Si">
+              <label for="vive_zonaRural">Si</label><br>
+              <input type="radio" id="no_vive_zonaRural" name="zona_rural" value="No">
+              <label for="no_vive_zonaRural">No</label><br><br>
+
+            </div>
+            <!-- declaracion jurada -->
+            <div>
+              <h2>Delcaración jurada</h2><br>
+
+              <p>A continuación lea atentamente esta declaración jurada, seleccione SI al final del documento si usted esta de acuerdo con los términos establecidos.</p>
+              <img class="declaracion" src="declaracion_jurada.jpg" alt="declaracion jurada">
+              <p><input type="radio" id="acepta_declaracion" name="acuerdo_declaracion" value="Aceptado">
+              <label for="acepta_declaracion">Si, acepto las condiciones establecidas</label></p>
+              <p><input type="radio" id="no_acepta_declaracion" name="acuerdo_declaracion" value="No aceptado">
+              <label for="no_acepta_declaracion">No, no acepto las condiciones establecidas</label></p><br>
+            </div>
+            <input type="submit" value="Confirmar" class="button"><input type="submit" value="Cancelar" class="button2">
+    </body>
+</html>
