@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-   background: url(pantalla2.jpg);
+   background: url(pantalla.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -21,8 +21,8 @@ body {
     background: rgb(255, 255, 255);
     margin: auto;
     width: 700px;
-    margin-top: 150px;
-    border-radius: 2%;
+    margin-top: 100px;
+    margin-bottom: 75px;
   }
 h1{
     text-align: center;
@@ -117,6 +117,16 @@ input[class="text_radio"]{
     padding: 3px;
     border: none;
     margin-top: 0%;
+    border: 1px solid #ccc;
+}
+/* input[type="checkbox"]{
+    margin-right: 1%;
+} */
+img[class="declaracion"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 
