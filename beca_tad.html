@@ -4,7 +4,7 @@
         <!-- bootswatch -->
         <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
         <link rel="stylesheet" href="estilos.css">
-        <title>Becas Online</title>
+        <title>Postulación Beca Talento Deportivo/Artistico</title>
         
     </head>
     <body>
@@ -42,11 +42,11 @@
               <label class="sub">Antes de cargar el documento, renombrar el archivo a Nombre_Apellido_alumno_regular. Ej: Juan_Salinas_economica</label>
               <br><br>
 
-              <input type="text" id="nombre" name="nombre" placeholder="Nombres">
-              <input type="text" id="apellido" name="apellido" placeholder="Apellidos">
-              <input type="text" id="direccion" name="direccion" placeholder="Dirección">
-              <input type="text" id="correo" name="correo" placeholder="Correo">
-              <input type="text" id="telefono" name="telefono" placeholder="Teléfono">
+              <input type="text" class="text_formulario" id="nombre" name="nombre" placeholder="Nombres">
+              <input type="text" class="text_formulario" id="apellido" name="apellido" placeholder="Apellidos">
+              <input type="text" class="text_formulario" id="direccion" name="direccion" placeholder="Dirección">
+              <input type="text" class="text_formulario" id="correo" name="correo" placeholder="Correo">
+              <input type="text" class="text_formulario" id="telefono" name="telefono" placeholder="Teléfono">
 
               <p> ¿Posee una cuenta bancaria? </p>
               <label>Si su respuesta es Si, debe descargar este documento  https://bit.ly/3L01C8O | En caso de que el beneficiario sea menor de edad, debes descargar este documento https://bit.ly/3H8gOyh</label>
@@ -102,10 +102,10 @@
               <input type="text" class="text_radio" id="otra" placeholder="Escriba aquí su institución">
               <br>
 
-              <input type="text" id="nombreCE" placeholder="Nombre de la casa de estudio">
-              <input type="text" id="carrera" placeholder="Nombre de la carrera (En caso de corresponder)">
-              <input type="text" id="duracion_carrera" placeholder="Duración de la carrera (En caso de corresponder)">
-              <input type="text" id="semestre_actual" placeholder="Indique el semestre a cursar o que se encuentre cursando">
+              <input type="text" class="text_formulario" id="nombreCE" placeholder="Nombre de la casa de estudio">
+              <input type="text" class="text_formulario" id="carrera" placeholder="Nombre de la carrera (En caso de corresponder)">
+              <input type="text" class="text_formulario" id="duracion_carrera" placeholder="Duración de la carrera (En caso de corresponder)">
+              <input type="text" class="text_formulario" id="semestre_actual" placeholder="Indique el semestre a cursar o que se encuentre cursando">
               <br><br>
 
               <p>Indique el promedio de notas del anterior semestre o año cursado:</p>
@@ -300,11 +300,11 @@
               <h2>Participación y acreditación de la actividad deportiva y/o artístico cultural</h2><br>
 
               <p>Nivel de participación, ha participado fuera de: </p>
-              <label><input type="checkbox" id="paticipa_fuera_pais" value="País"> País</label><br>
-              <label><input type="checkbox" id="paticipa_fuera_region" value="Región"> Región</label><br>
-              <label><input type="checkbox" id="paticipa_fuera_provincia" value="Provincia"> Provincia</label><br>
-              <label><input type="checkbox" id="paticipa_fuera_comuna" value="Comuna"> Comuna</label><br>
-              <label><input type="checkbox" id="paticipa_solo_comuna" value="Solo comuna"> Solo comuna</label><br>
+              <label><input type="radio" id="paticipa_fuera_pais" name="participacion_fuera" value="País"> País</label><br>
+              <label><input type="radio" id="paticipa_fuera_region" name="participacion_fuera" value="Región"> Región</label><br>
+              <label><input type="radio" id="paticipa_fuera_provincia" name="participacion_fuera" value="Provincia"> Provincia</label><br>
+              <label><input type="radio" id="paticipa_fuera_comuna" name="participacion_fuera" value="Comuna"> Comuna</label><br>
+              <label><input type="radio" id="paticipa_solo_comuna" name="participacion_fuera" value="Solo comuna"> Solo comuna</label><br>
 
               <p>Frecuencia de viaje mensual para practicar su talento:</p>
               <input type="radio" id="menos_una_mensual" name="frecuencia_de_viajes" value="Menos de una vez">
@@ -334,11 +334,9 @@
 
               <p>A continuación lea atentamente esta declaración jurada, seleccione SI al final del documento si usted esta de acuerdo con los términos establecidos.</p>
               <img class="declaracion" src="declaracion_jurada.jpg" alt="declaracion jurada">
-              <p><input type="radio" id="acepta_declaracion" name="acuerdo_declaracion" value="Aceptado">
-              <label for="acepta_declaracion">Si, acepto las condiciones establecidas</label></p>
-              <p><input type="radio" id="no_acepta_declaracion" name="acuerdo_declaracion" value="No aceptado">
-              <label for="no_acepta_declaracion">No, no acepto las condiciones establecidas</label></p><br>
+              <p><input type="checkbox" id="acepta_declaracion" name="acuerdo_declaracion" value="Aceptado">
+              <label for="acepta_declaracion">Si, acepto las condiciones establecidas</label></p><br>
             </div>
-            <input type="submit" value="Confirmar" class="button"><input type="submit" value="Cancelar" class="button2">
+            <input type="submit" value="Confirmar" class="button"><input type="button" value="Cancelar" class="button2">
     </body>
 </html>
