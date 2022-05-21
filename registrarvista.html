@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
 	<link rel="stylesheet" href="estilos.css">
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </head>  
 <body>
@@ -17,36 +17,37 @@
      
      <div class="input-contenedor">
         <i class="fas fa-user icon"></i>
-        <input type="text" placeholder="Nombre">
+        <input id="nombre" type="text" placeholder="Nombre">
             
     </div>
 
     <div class="input-contenedor">
         <i class="fas fa-user icon"></i>
-        <input type="text" placeholder="Apellido">
+        <input id="apellido" type="text" placeholder="Apellido">
             
     </div>
          <div class="input-contenedor">
          <i class="fas fa-user icon"></i>
-         <input type="text" placeholder="RUT">
+         <input id="rut" type="text" placeholder="RUT">
          
      </div>
          
          <div class="input-contenedor">
          <i class="fas fa-envelope icon"></i>
-         <input type="text" placeholder="Correo Electronico">
+         <input id="email" type="text" placeholder="Correo Electronico">
          
      </div>
          
      <div class="input-contenedor">
          <i class="fas fa-key icon"></i>
-         <input type="password" placeholder="Contraseña">
+         <input id="pass" type="password" placeholder="Contraseña">
          
      </div>
-         <p><input type="button" value="Registrate" class="button"></p>
+         <p><input type="button" value="Registrate" class="button" onclick="registrar()"></p>
          <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
          <p>¿Ya tienes una cuenta?<a class="link" href="loginvista.html">Iniciar Sesion</a></p>
      </div>
     </form>
+    <script src="./logicaRegistro.js"></script>
 </body>
 </html>
