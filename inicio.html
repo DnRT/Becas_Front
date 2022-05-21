@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
         <link rel="stylesheet" href="estilos.css">
         <title>Becas Online</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
     </head>
     <body>
       <header>
@@ -22,21 +22,21 @@
       <main>
         
         <form class="formulario">
-          <h2>postulación a becas</h2>
+          <h2>Postulación a becas</h2>
 
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Seleccione una beca</option>
+          <select id="id_beca" class="form-select" aria-label="Default select example">
+            <option value="0">Seleccione una beca</option>
             <option value="1">Beca talento deportivo y/o artistico</option>
             <option value="2">Beca educación superior</option>
           </select>
-          <p><input type="submit" value="Confirmar" class="button"></p>
+          <p><input type="button" value="registrar" class="button" id="registrar" onclick="clickR()"></p>
         </form>
 
         <div class="contenedor">
-          <h2>renovar beca</h2>
-          <p><input type="button" value="Continuar" class="button"></p>
+          <h2>Renovar beca</h2>
+          <p><input type="button" value="renovar" class="button"></p>
         </div>
       </main>
-      <script src="logic.js"></script>
+      <script src="./logicInicio.js"></script>
     </body>
 </html>
