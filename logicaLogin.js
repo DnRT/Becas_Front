@@ -24,5 +24,23 @@ $(function(){
         }
     })
 });
-console.log($dataAdmin);
-console.log($dataAlumno);
+function auth(){
+    var rut = document.getElementById('rut').value;
+    var pass = document.getElementById('pass').value;
+    var success = false;
+    $dataAlumno.forEach(element => {
+    if(rut === element.data.rut && pass === element.data.contrasena){
+        success = true;
+        window.location.href='./inicio.html';
+    }
+    });
+    $dataAdmin.forEach(element => {
+    if(rut === element.data.rut && pass === element.data.contrasena){
+        success = true;
+        window.location.href='./inicio.html';
+    }
+    });
+    if(!success){
+        alert('Rut y/o Contraseña erroneas');
+    }
+}
