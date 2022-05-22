@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+    
 <head>
 	<meta charset="UTF-8">
 	<title>Iniciar sesión</title> 
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-	<link rel="stylesheet" href="estilos.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="./style/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="./logicaLogin.js"></script>
-
 </head>  
+
 <body>
     <form class="formulario">
     
@@ -20,16 +21,16 @@
          
          <div class="input-contenedor">
          <i class="fas fa-envelope icon"></i>
-         <input id="rut" type="text" placeholder="RUT">
+         <input type="text" placeholder="RUT">
          
          </div>
          
          <div class="input-contenedor">
          <i class="fas fa-key icon"></i>
-         <input id="pass" type="password" placeholder="Contraseña">
+         <input type="password" placeholder="Contraseña">
          
          </div>
-         <p><input type="button" value="Login" class="button" onclick="auth()"></p>
+         <p><input type="submit" value="Login" class="button"></p>
          <p>¿No tienes una cuenta? <a class="link" href="registrarvista.html">Registrate </a></p>
      </div>
     </form>

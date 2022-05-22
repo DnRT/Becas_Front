@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- bootswatch -->
+        <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+        <link rel="stylesheet" href="./style/estilos.css">
+        <title>Administración Becas</title>
+        
+    </head>
+    <body>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Becas Online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </header>
+      
+      <main>
+        
+        <form class="formulario">
+          <h2>postulación a becas</h2>
+
+          <select id="beca" class="form-select" aria-label="Default select example">
+            <option selected>Seleccione una beca</option>
+            <option value="1">Beca talento deportivo y/o artistico</option>
+            <option value="2">Beca educación superior</option>
+          </select>
+          <p><input type="submit" value="Confirmar" class="button"></p>
+        </form>
+
+        <div class="contenedor">
+          <h2>renovar beca</h2>
+          <p><a href="renovacion_beca.html"><input type="button" value="Continuar" class="button"></a></p>
+        </div>
+      </main>
+      <script src="./logicInicio.js"></script>
+    </body>
+</html>
