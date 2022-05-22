@@ -133,6 +133,11 @@ img[class="declaracion"]{
   width: 100%;
 }
 div[class="contenedor"]{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+div[class="contenedor2"]{
     margin: auto;
     width: 400px;
     margin-top: 50px;

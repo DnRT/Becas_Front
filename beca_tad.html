@@ -3,7 +3,7 @@
     <head>
         <!-- bootswatch -->
         <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
-        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="./style/estilos.css">
         <title>Postulación Beca Talento Deportivo/Artistico</title>
         
     </head>
@@ -11,14 +11,14 @@
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand">Formulario postulación a beca talento deportivo y/o artístico</a>
+            <a class="navbar-brand" href="inicio.html">Formulario postulación a beca talento deportivo y/o artístico</a>
           </div>
         </nav>
       </header>
       
       <main>
         
-        <form class="formulario_beca">
+        <form id="nueva_beca" class="formulario_beca">
             <!-- antecedentes del postulante -->
             <div>
               <h2>Antecedentes del postulante</h2>
@@ -337,6 +337,6 @@
               <p><input type="checkbox" id="acepta_declaracion" name="acuerdo_declaracion" value="Aceptado">
               <label for="acepta_declaracion">Si, acepto las condiciones establecidas</label></p><br>
             </div>
-            <input type="submit" value="Confirmar" class="button"><input type="button" value="Cancelar" class="button2">
+            <input type="submit" id="submit" value="Confirmar" class="button"><input type="button" value="Cancelar" class="button2">
     </body>
 </html>
