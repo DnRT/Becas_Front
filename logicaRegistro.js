@@ -4,8 +4,8 @@ function registrar(){
     datos.append('rut',document.getElementById('rut').value);
     datos.append('nombre',document.getElementById('nombre').value);
     datos.append('apellido',document.getElementById('apellido').value);
-    datos.append('edad',null);
-    datos.append('direccion',null);
+    datos.append('edad',document.getElementById('edad').value);
+    datos.append('direccion',document.getElementById('dirección').value);
     datos.append('correo',document.getElementById('email').value);
     datos.append('contrasena',document.getElementById('pass').value);
     fetch('http://127.0.0.1:8000/api/test/alumnos', {
