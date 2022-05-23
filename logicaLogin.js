@@ -37,7 +37,7 @@ function auth(){
     $dataAdmin.forEach(element => {
     if(rut === element.data.rut && pass === element.data.contrasena){
         success = true;
-        window.location.href='./inicio.html';
+        window.location.href='./vista_admin.html';
     }
     });
     if(!success){
