@@ -4,14 +4,14 @@
         <!-- bootswatch -->
         <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
         <link rel="stylesheet" href="./style/estilos.css">
-        <title>Administración Becas</title>
+        <title>Administracion Becas</title>
         
     </head>
     <body>
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Becas Online</a>
+            <a class="navbar-brand" href="#">Administración de becas</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,23 +20,24 @@
       </header>
       
       <main>
-        
-        <form class="formulario">
-          <h2>postulación a becas</h2>
-
-          <select id="beca" class="form-select" aria-label="Default select example">
-            <option selected>Seleccione una beca</option>
-            <option value="1">Beca talento deportivo y/o artistico</option>
-            <option value="2">Beca educación superior</option>
-          </select>
-          <p><input type="submit" value="Confirmar" class="button"></p>
-        </form>
-
         <div class="contenedor">
-          <h2>renovar beca</h2>
-          <p><a href="renovacion_beca.html"><input type="button" value="Continuar" class="button"></a></p>
-        </div>
+          <div class="contenedor2">
+            <br><h2>Modificacion de formulario</h2>
+
+            <select id="beca" class="form-select" aria-label="Default select example">
+              <option selected>Seleccione un formulario</option>
+              <option value="1">Beca talento deportivo y/o artistico</option>
+              <option value="2">Beca educación superior</option>
+            </select>
+            <p><input type="button" value="Confirmar" class="button"></p>
+          </div>
+
+          <div class="contenedor2">
+            <br><br><h2>Revisar becas</h2>
+            <br><br>
+            <p><a href="admin_becas.html"><input type="button" value="Continuar" class="button"></a></p>
+          </div>
+      </div>
       </main>
-      <script src="./logicInicio.js"></script>
     </body>
 </html>

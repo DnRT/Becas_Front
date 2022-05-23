@@ -1,4 +1,4 @@
-var registro = document.getElementById('id_beca');
+var registro = document.getElementById('beca');
 function clickR(){
     switch(registro.value){
         case "1":
