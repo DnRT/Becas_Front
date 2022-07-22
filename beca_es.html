@@ -5,7 +5,8 @@
         <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
         <link rel="stylesheet" href="./style/estilos.css">
         <title>Postulación Beca Educación superior</title>
-        
+        <script src="./logicaForm.js"></script>
+
     </head>
     <body>
       <header>
@@ -291,7 +292,7 @@
               <p><input type="checkbox" id="acepta_declaracion" name="acuerdo_declaracion" value="Aceptado">
               <label for="acepta_declaracion">Si, acepto las condiciones establecidas</label></p>
             </div>
-            <input type="button" value="Confirmar" class="button"><input type="button" value="Cancelar" class="button2">
+            <input type="button" value="Confirmar" class="button" onclick="inicio()"><input type="button" value="Cancelar" class="button2" onclick="inicio()">
         </form>
       </main>
     </body>
